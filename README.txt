@@ -22,7 +22,7 @@
 
 summary of commands 
 
-cd C:\Users\priya\.vscode\p2p-file-sharing-updated
+cd C:file location
 npm init -y
 npm install express socket.io
 npm start
