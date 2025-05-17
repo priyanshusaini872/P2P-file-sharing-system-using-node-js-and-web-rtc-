@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P2P File Sharing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📤 P2P File Sharing</h1>
+
+    <div id="drop-zone">Drag & Drop File Here or Click to Select</div>
+    <input type="file" id="fileInput" hidden />
+    <button id="sendBtn">Send File</button>
+    <progress id="progressBar" value="0" max="100"></progress>
+
+    <div id="downloadSection" class="hidden">
+      <h3>Received File:</h3>
+      <a id="downloadLink" download>Download File</a>
+    </div>
+
+    <div class="chat">
+      <h3>💬 Chat</h3>
+      <div id="chatBox"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button id="sendMsgBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
